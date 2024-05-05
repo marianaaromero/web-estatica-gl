@@ -58,7 +58,7 @@ nav ul li a {
 
 @media only screen and (max-width: 600px) {
     .header-content {
-        margin: 10px;
+        margin: 0 10px;
     }
     .menu ul li {
         margin: 0 10px;
