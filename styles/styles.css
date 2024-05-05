@@ -153,27 +153,6 @@ body {
     animation-delay: 2s;
 }
 
-
-/* KEYFRAMES HOME*/
-@keyframes text-reveal-box {
-    50% {
-        left: 0;
-        width: 100%;
-    }
-
-    100% {
-        left: 100%;
-        width: 0;
-    }
-}
-
-@keyframes text-reveal {
-    100% {
-        color: #FFF9F3;
-    }
-}
-
-
 /* TRIVIA */
 
 .container {
@@ -203,6 +182,26 @@ body {
 }
 
 
+/* KEYFRAMES */
+
+/* home keyframes */
+@keyframes text-reveal-box {
+    50% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes text-reveal {
+    100% {
+        color: #FFF9F3;
+    }
+}
 
 
 /* MEDIA QUERIES */
