@@ -82,6 +82,13 @@ body {
     }
 }
 
+/* main */
+
+.main-content {
+    margin: 4rem 0;
+    padding: 20px;
+}
+
 
 /* TRIVIA */
 
