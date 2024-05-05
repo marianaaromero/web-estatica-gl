@@ -153,6 +153,55 @@ body {
     animation-delay: 2s;
 }
 
+
+/* titles */
+.title-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.news-section,
+.carousel-section,
+.artworks-section {
+    padding: 10px;
+    margin: 0;
+
+}
+
+/* highlights */
+.artworks-gallery {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.painting {
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #6D8261;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.painting img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* TRIVIA */
 
 .container {
@@ -245,9 +294,6 @@ body {
 
     .cover-section {
         width: 100%;
-    }
-    .cover-section div {
-        background-color: aqua;
     }
 
     .cover-section h1{
