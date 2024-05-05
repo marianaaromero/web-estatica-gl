@@ -169,18 +169,29 @@ body {
     padding: 0.5em;
 }
 
-.img {
+.question-image {
     object-fit: cover;
-    height: 200px;
+    height: 400px;
     width: 100%;
 }
 
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background-color: #FFF9F3;
     color: #8CA87C;
 }
 
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.correct {
+    border: 2px solid rgb(16, 92, 16);
+}
+
+.incorrect {
+    border: 2px solid rgb(211, 66, 66);
+}
 
 /* KEYFRAMES */
 
@@ -234,23 +245,6 @@ body {
 
 
 /* trivia media queries */
-@media (width > 768px) {
-
-    .header{
-        background-color: #6D8261;
-        width: 700px;
-        padding: 10px;
-    }    
-
-    .btn {
-        background-color: #6D8261;
-        width: 700px;
-        padding: 10px;
-        margin: 5px;
-    }
-}
-
-
 @media (width < 769px) {
     
     .header{
