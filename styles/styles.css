@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    position: relative;
 }
 
 #logo {
@@ -82,12 +83,45 @@ body {
     }
 }
 
-/* main */
+/* main content home */
 
 .main-content {
-    margin: 4rem 0;
-    padding: 20px;
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+.cover-section {
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/1-cover-Nymphéas-Seerosen-1915.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+.cover-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#323b2d;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.cover-section h1 {
+    width: 100%;
+
+}
+
 
 
 /* TRIVIA */
