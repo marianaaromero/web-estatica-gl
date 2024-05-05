@@ -1,3 +1,4 @@
+/*Arreglo */
 const questions = [
     {
         question: "Where was Claude Monet born?",
@@ -88,21 +89,39 @@ const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const imageElement = document.getElementById("question-image");
 
-
+/*Inicia el juego, resetea valores*/ 
 function startTrivia() {
     currentQuestionIndex = 0;
     score = 0;
-    showQuestion(); 
+    showStartButton();
 }
 
+/*Crea el boton START*/
+function showStartButton() {
+    resetState();
+    questionElement.innerHTML = "Press START to begin!";
+    
+    const startButton = createButton("START", showQuestion);
+    answerButton.appendChild(startButton);
+}
+
+/*Crea botones, con un texto dado y lo devuelve*/
+function createButton(text, clickHandler) {
+    const button = document.createElement("button");
+    button.innerHTML = text;
+    button.classList.add("btn");
+    button.addEventListener("click", clickHandler);
+    return button;
+}
+
+/*Muesta la pregunta actual y sus cuatro opciones*/
+/*Crea los botones correspondientes*/
 function showQuestion() {
     resetState();
 
     const currentQuestion = questions[currentQuestionIndex];
     const questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNum}. ${currentQuestion.question}`;
-    
-    const imageElement = document.getElementById("question-image");
     imageElement.src = currentQuestion.img;
 
     currentQuestion.answers.forEach(answer => {
@@ -111,17 +130,16 @@ function showQuestion() {
     });
 }
 
+/*Crea un boton de respuesta*/
 function createAnswerButton(text, correct) {
-    const button = document.createElement("button");
-    button.innerHTML = text;
-    button.classList.add("btn");
+    const button = createButton(text, handleAnswer);
     if (correct) {
         button.dataset.correct = true;
     }
-    button.addEventListener("click", handleAnswer);
     return button;
 }
 
+/*Verifica si la respuesta es correcta o incorrecta */
 function handleAnswer(event) {
     const selectedBtn = event.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -138,16 +156,19 @@ function handleAnswer(event) {
     setTimeout(showNextQuestion, 2000);
 }
 
+/*Muestra la respuesta correcta*/
 function showCorrectAnswer() {
     Array.from(answerButton.children).find(button => button.dataset.correct === "true").classList.add("correct");
 }
 
+/*Deshabilita los botones*/ 
 function disableAnswerButtons() {
     Array.from(answerButton.children).forEach(button => {
         button.disabled = true;
     });
 }
 
+/*Muestra la siguiente pregunta*/
 function showNextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < 5) {
@@ -157,17 +178,17 @@ function showNextQuestion() {
     }
 }
 
+/*Muestra la puntuacion final obtenida*/
+/*Crea boton de reinicio*/
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of 5!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
 
-    const restartButton = document.createElement("button");
-    restartButton.innerHTML = "RESTART";
-    restartButton.classList.add("btn");
-    restartButton.addEventListener("click", startTrivia);
+    const restartButton = createButton("RESTART", startTrivia);
     answerButton.appendChild(restartButton);
 }
 
+/*Reestablece el juego*/
 function resetState() {
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
