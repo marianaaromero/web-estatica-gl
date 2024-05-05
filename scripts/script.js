@@ -56,7 +56,7 @@ const questions = [
             {text: "Lily Garden", correct: false},
             {text: "Swan Lagoon", correct: false},
             {text: "The Nymphaea Pond", correct: true},
-            {text: "The Lotus Fountain", correct: flase},
+            {text: "The Lotus Fountain", correct: false},
         ]
     },
     {
@@ -66,7 +66,7 @@ const questions = [
             {text: "Aquatic Garden", correct: false},
             {text: "Water Lilies", correct: true},
             {text: "Reflections in the water", correct: false},
-            {text: "Swan Lake", correct: flase},
+            {text: "Swan Lake", correct: false},
         ]
     },
     {
@@ -76,7 +76,7 @@ const questions = [
             {text: "Houses", correct: false},
             {text: "Fields", correct: false},
             {text: "Haystacks", correct: true},
-            {text: "Huts", correct: flase},
+            {text: "Huts", correct: false},
         ]
     }
 ];
@@ -150,16 +150,22 @@ function disableAnswerButtons() {
 
 function showNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < 5) {
         showQuestion();
-    } else if (currentQuestionIndex === 5)
+    } else {
         showScore();
     }
 }
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of 5!`;
+
+    const restartButton = document.createElement("button");
+    restartButton.innerHTML = "RESTART";
+    restartButton.classList.add("btn");
+    restartButton.addEventListener("click", startTrivia);
+    answerButton.appendChild(restartButton);
 }
 
 function resetState() {
