@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "Where was Claude Monet born?",
-        img: "../img/monet.jpg",
+        img: "../assets/monet.jpeg",
         answers: [
             {text: "Paris, France", correct: true},
             {text: "Milan, Italy", correct: false},
@@ -11,14 +11,24 @@ const questions = [
     },
     {
         question: "What is the name of this painting?",
-        img: "../img/lunchOnTheGrass.jpg",
+        img: "../assets/lunchOnThegrass.jpg",
         answers: [
             {text: "Picnic in the park", correct: false},
             {text: "Tea with friends", correct: false},
             {text: "Lunch on the grass", correct: true},
             {text: "Brunch in the park", correct: false},
         ]
-    }
+    },
+    {
+        question: "Where was Claude Monet born?",
+        img: "../assets/catedralRouen.jpg",
+        answers: [
+            {text: "Paris, France", correct: true},
+            {text: "Milan, Italy", correct: false},
+            {text: "Madrid, Spain", correct: false},
+            {text: "Lisbon, Portugal", correct: false},
+        ]
+    },
 ];
 
 let currentQuestionIndex = 0;
