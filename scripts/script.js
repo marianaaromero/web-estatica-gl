@@ -99,7 +99,7 @@ function startTrivia() {
 /*Crea el boton START*/
 function showStartButton() {
     resetState();
-    questionElement.innerHTML = "Press START to begin!";
+    questionElement.innerHTML = "How much do you know about Claude Monet?";
     
     const startButton = createButton("START", showQuestion);
     answerButton.appendChild(startButton);
@@ -182,7 +182,7 @@ function showNextQuestion() {
 /*Crea boton de reinicio*/
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of 5!`;
 
     const restartButton = createButton("RESTART", startTrivia);
     answerButton.appendChild(restartButton);
