@@ -165,6 +165,7 @@ body {
     box-sizing: border-box;
     font-size: 2rem;
     padding: 20px;
+    text-shadow: 5px -3px 1px #5b6e51c4;
 }
 
 .news-section,
@@ -176,29 +177,83 @@ body {
 }
 
 /* highlights */
+
 .artworks-gallery {
-    margin: 0;
-    padding: 0;
+    margin: 0 10%;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid:
+        "painting1 painting3" 1fr
+        "painting2 painting3" 1fr
+        / 1fr 1fr;
+    gap: 20px;
 }
 
-.painting {
-    width: 300px;
+#painting1 { grid-area: painting1; }
+#painting3 { grid-area: painting3; }
+#painting2 { grid-area: painting2; }
+
+#painting1,
+#painting2,
+#painting3 {
+    position: relative;
     overflow: hidden;
     cursor: pointer;
-    background-color: #6D8261;
+    background-color: #8CA87C;
     border-radius: 10px;
-    padding: 10px;
+    box-shadow: 10px -10px 20px #5b6e51c4;
 }
 
-.painting img {
+#painting1 img,
+#painting2 img, 
+#painting3 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF9F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#painting1:hover .overlay,
+#painting2:hover .overlay,
+#painting3:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h1 .overlay p {
+    margin: 0;
+}
+
+.actions {
+    margin-top: 10px;
+}
+.actions button {
+    background-color: #FFF;
+    color: #6D8261;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.actions button:hover {
+    background-color: #6D8261;
+    color: #FFF;
 }
 
 
@@ -302,7 +357,6 @@ body {
     .cover-section h1{
         width: fit-content;
         margin: 5%;
-        background-color: #6D8261;
         font-size: 0.5rem;
     }
 }
