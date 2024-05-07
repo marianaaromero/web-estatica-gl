@@ -1,4 +1,4 @@
-/*Arreglo */
+//Arreglo de preguntas 
 const questions = [
     {
         question: "Where was Claude Monet born?",
@@ -84,31 +84,30 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let remainingQuestions = [];
-
+const remainingQuestions = [];
 
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const imageElement = document.getElementById("question-image");
 
 
+//Inicio del Juego
 function startTrivia() {
     currentQuestionIndex = 0;
     score = 0;
-    remainingQuestions = [...questions]; // Copia todas las preguntas al iniciar el juego
+    remainingQuestions = [...questions]; //Copia todas las preguntas al iniciar el juego
     showStartButton();
 }
 
-/*Crea el boton START*/
+//Mostrar botón de Inicio
 function showStartButton() {
     resetState();
     questionElement.innerHTML = "How much do you know about Claude Monet?";
-    
     const startButton = createButton("START", showQuestion);
     answerButton.appendChild(startButton);
 }
 
-/*Crea botones, con un texto dado y lo devuelve*/
+//Creación de botones
 function createButton(text, clickHandler) {
     const button = document.createElement("button");
     button.innerHTML = text;
@@ -117,32 +116,27 @@ function createButton(text, clickHandler) {
     return button;
 }
 
+//Mostrar pregunta aleatoria
 function showQuestion() {
     resetState();
-
     if (remainingQuestions.length === 0) {
-        showScore(); // Si no quedan más preguntas, muestra la puntuación final
+        showScore(); //Si no quedan más preguntas, muestra la puntuación final
         return;
     }
 
-    // Escoge una pregunta aleatoria de las preguntas restantes
     const randomIndex = Math.floor(Math.random() * remainingQuestions.length);
     const currentQuestion = remainingQuestions[randomIndex];
-    
     const questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNum}. ${currentQuestion.question}`;
     imageElement.src = currentQuestion.img;
-
     currentQuestion.answers.forEach(answer => {
         const button = createAnswerButton(answer.text, answer.correct);
         answerButton.appendChild(button);
     });
-
-    // Elimina la pregunta seleccionada de las preguntas restantes
     remainingQuestions.splice(randomIndex, 1);
 }
 
-/*Crea un boton de respuesta*/
+//Creación de botones de respuesta
 function createAnswerButton(text, correct) {
     const button = createButton(text, handleAnswer);
     if (correct) {
@@ -151,11 +145,10 @@ function createAnswerButton(text, correct) {
     return button;
 }
 
-/*Verifica si la respuesta es correcta o incorrecta */
+//Manejar respuesta
 function handleAnswer(event) {
     const selectedBtn = event.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
@@ -163,24 +156,23 @@ function handleAnswer(event) {
         selectedBtn.classList.add("incorrect");
         showCorrectAnswer();
     }
-
     disableAnswerButtons();
     setTimeout(showNextQuestion, 2000);
 }
 
-/*Muestra la respuesta correcta*/
+//Mostrar respuesta Correcta
 function showCorrectAnswer() {
     Array.from(answerButton.children).find(button => button.dataset.correct === "true").classList.add("correct");
 }
 
-/*Deshabilita los botones*/ 
+//Desactivar botones de respuesta
 function disableAnswerButtons() {
     Array.from(answerButton.children).forEach(button => {
         button.disabled = true;
     });
 }
 
-/*Muestra la siguiente pregunta*/
+//Mostrar siguiente Pregunta o score
 function showNextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < 5) {
@@ -190,17 +182,15 @@ function showNextQuestion() {
     }
 }
 
-/*Muestra la puntuacion final obtenida*/
-/*Crea boton de reinicio*/
+//Mostrar puntuación final
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of 5!`;
-
     const restartButton = createButton("RESTART", startTrivia);
     answerButton.appendChild(restartButton);
 }
 
-/*Reestablece el juego*/
+//Restablecer estado
 function resetState() {
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
