@@ -84,15 +84,18 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
+let remainingQuestions = [];
+
 
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const imageElement = document.getElementById("question-image");
 
-/*Inicia el juego, resetea valores*/ 
+
 function startTrivia() {
     currentQuestionIndex = 0;
     score = 0;
+    remainingQuestions = [...questions]; // Copia todas las preguntas al iniciar el juego
     showStartButton();
 }
 
@@ -114,12 +117,18 @@ function createButton(text, clickHandler) {
     return button;
 }
 
-/*Muesta la pregunta actual y sus cuatro opciones*/
-/*Crea los botones correspondientes*/
 function showQuestion() {
     resetState();
 
-    const currentQuestion = questions[currentQuestionIndex];
+    if (remainingQuestions.length === 0) {
+        showScore(); // Si no quedan más preguntas, muestra la puntuación final
+        return;
+    }
+
+    // Escoge una pregunta aleatoria de las preguntas restantes
+    const randomIndex = Math.floor(Math.random() * remainingQuestions.length);
+    const currentQuestion = remainingQuestions[randomIndex];
+    
     const questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNum}. ${currentQuestion.question}`;
     imageElement.src = currentQuestion.img;
@@ -128,6 +137,9 @@ function showQuestion() {
         const button = createAnswerButton(answer.text, answer.correct);
         answerButton.appendChild(button);
     });
+
+    // Elimina la pregunta seleccionada de las preguntas restantes
+    remainingQuestions.splice(randomIndex, 1);
 }
 
 /*Crea un boton de respuesta*/
