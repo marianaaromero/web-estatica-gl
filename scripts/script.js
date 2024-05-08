@@ -84,7 +84,7 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-const remainingQuestions = [];
+let remainingQuestions = [];
 
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");

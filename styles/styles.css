@@ -8,7 +8,10 @@ body {
     background-color: #8CA87C;
     color: #FFF9F3;
     transition: all 0.3s;
+    font-family: "Artifika", serif;
 }
+
+
 
 /* HOME */
 
@@ -30,7 +33,7 @@ body {
     margin: 0px 10%;
     height: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -47,7 +50,7 @@ body {
 .menu ul {
     padding: 0;
     display: flex;
-    list-style: none;   
+    list-style: none;
 }
 
 /* cada ítem del menú */
@@ -87,7 +90,7 @@ body {
 .cover-section {
     width: 100%;
     min-height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(/assets/1-cover-Nymphéas-Seerosen-1915.jpeg);
@@ -104,14 +107,14 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color:#323b2d;
+    background-color: #323b2d;
     opacity: 0.6;
     z-index: -1;
 }
 
 .cover-section div {
     margin-left: -20%;
-    padding-left: 20%; 
+    padding-left: 20%;
     justify-content: flex-start;
 }
 
@@ -145,6 +148,7 @@ body {
     animation-delay: 1s;
     overflow: hidden;
 }
+
 .cover-section h1:nth-child(1) span {
     animation-delay: 1s;
 }
@@ -164,14 +168,14 @@ body {
     font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
     font-size: 2rem;
-    padding: 20px;
+    padding: 1.25em;
     text-shadow: 5px -3px 1px #5b6e51c4;
 }
 
 .news-section,
 .carousel-section,
 .artworks-section {
-    padding: 10px;
+    padding: 0.625em;
     margin: 0;
 
 }
@@ -183,15 +187,21 @@ body {
     box-sizing: border-box;
     display: grid;
     grid:
-        "painting1 painting3" 1fr
-        "painting2 painting3" 1fr
-        / 1fr 1fr;
+        "painting1 painting3" 1fr "painting2 painting3" 1fr / 1fr 1fr;
     gap: 20px;
 }
 
-#painting1 { grid-area: painting1; }
-#painting3 { grid-area: painting3; }
-#painting2 { grid-area: painting2; }
+#painting1 {
+    grid-area: painting1;
+}
+
+#painting3 {
+    grid-area: painting3;
+}
+
+#painting2 {
+    grid-area: painting2;
+}
 
 #painting1,
 #painting2,
@@ -205,7 +215,7 @@ body {
 }
 
 #painting1 img,
-#painting2 img, 
+#painting2 img,
 #painting3 img {
     width: 100%;
     height: 100%;
@@ -243,22 +253,24 @@ body {
 .actions {
     margin-top: 10px;
 }
+
 .actions button {
     background-color: #FFF;
     color: #6D8261;
     border: none;
-    padding: 5px 10px;
+    padding: 0.313em 0.625em;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .actions button:hover {
     background-color: #6D8261;
     color: #FFF;
 }
 
 
-/* TRIVIA */
 
+/* TRIVIA */
 .container {
     width: 100vw;
     height: 100vh;
@@ -270,11 +282,12 @@ body {
     font-size: 1.5rem;
 }
 
-.header{
+.header {
     background-color: #6D8261;
     width: 700px;
-    padding: 10px;
-}    
+    padding: 0.625em;
+    border-radius: 10px;
+}
 
 .question {
     padding: 0.5em;
@@ -290,12 +303,13 @@ body {
     background-color: #6D8261;
     color: #FFF9F3;
     width: 700px;
-    padding: 10px;
-    margin: 5px;
+    padding: 0.625em;
+    margin: 0.313em;
     border: none;
     display: block;
     font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Artifika", serif;
+    border-radius: 10px;
 }
 
 .btn:hover:not([disabled]) {
@@ -314,6 +328,8 @@ body {
 .incorrect {
     border: 2px solid rgb(211, 66, 66);
 }
+
+
 
 /* KEYFRAMES */
 
@@ -338,14 +354,11 @@ body {
 
 
 /* MEDIA QUERIES */
-
-
-/* home media queries */
-
 @media only screen and (max-width: 600px) {
     .header-content {
         margin: 0 5%;
     }
+
     .menu ul li {
         margin: 0 0.5rem;
     }
@@ -354,29 +367,22 @@ body {
         width: 100%;
     }
 
-    .cover-section h1{
+    .cover-section h1 {
         width: fit-content;
         margin: 5%;
         font-size: 0.5rem;
     }
-}
 
-
-/* trivia media queries */
-@media (width < 769px) {
-    
-    .header{
+    .header {
         background-color: #6D8261;
         width: 300px;
-        padding: 10px;
+        padding: 0.625em;
     }
-    
+
     .btn {
         background-color: #6D8261;
         width: 300px;
-        padding: 10px;
-        margin: 5px;
+        padding: 0.625em;
+        margin: 0.313em;
     }
-
 }
-
