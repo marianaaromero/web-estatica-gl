@@ -4,80 +4,80 @@ const questions = [
         question: "Where was Claude Monet born?",
         img: "../assets/monet.jpeg",
         answers: [
-            {text: "Paris, France", correct: true},
-            {text: "Milan, Italy", correct: false},
-            {text: "Madrid, Spain", correct: false},
-            {text: "Lisbon, Portugal", correct: false},
+            { text: "Paris, France", correct: true },
+            { text: "Milan, Italy", correct: false },
+            { text: "Madrid, Spain", correct: false },
+            { text: "Lisbon, Portugal", correct: false },
         ]
     },
     {
         question: "What is the name of this painting?",
         img: "../assets/lunchOnThegrass.jpg",
         answers: [
-            {text: "Picnic in the park", correct: false},
-            {text: "Tea with friends", correct: false},
-            {text: "Lunch on the grass", correct: true},
-            {text: "Brunch in the park", correct: false},
+            { text: "Picnic in the park", correct: false },
+            { text: "Tea with friends", correct: false },
+            { text: "Lunch on the grass", correct: true },
+            { text: "Brunch in the park", correct: false },
         ]
     },
     {
         question: "How many paintings does the Rouen Cathedral series consist of?",
         img: "../assets/catedralRouen.jpg",
         answers: [
-            {text: "8", correct: false},
-            {text: "15", correct: false},
-            {text: "4", correct: false},
-            {text: "30", correct: true},
+            { text: "8", correct: false },
+            { text: "15", correct: false },
+            { text: "4", correct: false },
+            { text: "30", correct: true },
         ]
     },
     {
         question: "In which city did Monet live and paint for many years?",
         img: "../assets/house.jpg",
         answers: [
-            {text: "Giverny, France", correct: true},
-            {text: "Milan, Italy", correct: false},
-            {text: "Paris, France", correct: false},
-            {text: "Venice, Italy", correct: false},
+            { text: "Giverny, France", correct: true },
+            { text: "Milan, Italy", correct: false },
+            { text: "Paris, France", correct: false },
+            { text: "Venice, Italy", correct: false },
         ]
     },
     {
         question: "What art movement did Monet lead?",
         img: "../assets/impressionSunrise.jpg",
         answers: [
-            {text: "Renaissance", correct: false},
-            {text: "Surrealism", correct: false},
-            {text: "Realism", correct: false},
-            {text: "Impressionism", correct: true},
+            { text: "Renaissance", correct: false },
+            { text: "Surrealism", correct: false },
+            { text: "Realism", correct: false },
+            { text: "Impressionism", correct: true },
         ]
     },
     {
         question: "What is the name of this painting?",
         img: "../assets/estanqueNinfeas.jpg",
         answers: [
-            {text: "Lily Garden", correct: false},
-            {text: "Swan Lagoon", correct: false},
-            {text: "The Nymphaea Pond", correct: true},
-            {text: "The Lotus Fountain", correct: false},
+            { text: "Lily Garden", correct: false },
+            { text: "Swan Lagoon", correct: false },
+            { text: "The Nymphaea Pond", correct: true },
+            { text: "The Lotus Fountain", correct: false },
         ]
     },
     {
         question: "What is the name of this painting?",
         img: "../assets/liriosDeAgua.jpg",
         answers: [
-            {text: "Aquatic Garden", correct: false},
-            {text: "Water Lilies", correct: true},
-            {text: "Reflections in the water", correct: false},
-            {text: "Swan Lake", correct: false},
+            { text: "Aquatic Garden", correct: false },
+            { text: "Water Lilies", correct: true },
+            { text: "Reflections in the water", correct: false },
+            { text: "Swan Lake", correct: false },
         ]
     },
     {
         question: "What is the name of this series of paintings?",
         img: "../assets/haystacks.jpg",
         answers: [
-            {text: "Houses", correct: false},
-            {text: "Fields", correct: false},
-            {text: "Haystacks", correct: true},
-            {text: "Huts", correct: false},
+            { text: "Houses", correct: false },
+            { text: "Fields", correct: false },
+            { text: "Haystacks", correct: true },
+            { text: "Huts", correct: false },
         ]
     }
 ];
