@@ -15,34 +15,39 @@
 </head>
 
 <body>
+    <!--encabezado-->
     <header class="home-header">
         <div class="header-content">
             <h1 id="logo">Monet<b>Gaze</b></h1>
             <nav class="menu">
                 <ul>
                     <li><a href="./home.html">Home</a></li>
-                    <li><a href="">Timeline</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="./trivia.html">Trivia</a></li>
                 </ul>
                 <div class="brush"><i class="ri-brush-line brush-line-icon"></i></div>
             </nav>
         </div>
     </header>
-    <div class="container">
-        <div class="header">
-            <div class="question" id="question">
-                Question
+    <!--contenido-->
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="question" id="question">
+                    Question
+                </div>
+                <img src="../assets/liriosDeAgua.jpg" class="question-image" id="question-image">
             </div>
-            <img src="../assets/liriosDeAgua.jpg" class="question-image" id="question-image">
+            <div class="answer-buttons" id="answer-buttons">
+                <button class="btn" id="1">Option 1</button>
+                <button class="btn" id="2">Option 2</button>
+                <button class="btn" id="3">Option 3</button>
+                <button class="btn" id="4">Option 4</button>
+            </div>
         </div>
-        <div class="answer-buttons" id="answer-buttons">
-            <button class="btn" id="1">Option 1</button>
-            <button class="btn" id="2">Option 2</button>
-            <button class="btn" id="3">Option 3</button>
-            <button class="btn" id="4">Option 4</button>
-        </div>
-    </div>
+    </main>
 </body>
+<script src="../scripts/scriptTrivia.js"></script>
 <script src="../scripts/script.js"></script>
 
 </html>
