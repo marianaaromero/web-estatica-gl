@@ -11,3 +11,4 @@ brush.addEventListener("click", function() {
         state = false;
     }
 });
+
