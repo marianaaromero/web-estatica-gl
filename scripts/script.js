@@ -12,6 +12,7 @@ brush.addEventListener("click", function() {
     }
 });
 
+// slider button
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 const slide = document.querySelector('.slide');
