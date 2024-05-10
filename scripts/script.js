@@ -12,32 +12,32 @@ brush.addEventListener("click", function() {
     }
 });
 
-// button elements
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
+const slide = document.querySelector('.slide');
 
-nextButton.addEventListener('click', handleNextClick);
-prevButton.addEventListener('click', handlePrevClick);
+nextButton.addEventListener('click', slideForward);
+prevButton.addEventListener('click', slideBackward);
 
-function handleNextClick() {
-    const slide = document.querySelector('.slide');
+function slideForward() {
     const firstItem = slide.firstElementChild;
     slide.appendChild(firstItem);
+    highlightActiveButton(nextButton);
 }
 
-function handlePrevClick() {
-    const slide = document.querySelector('.slide');
+function slideBackward() {
     const lastItem = slide.lastElementChild;
     slide.prepend(lastItem);
+    highlightActiveButton(prevButton);
 }
 
 // event: keyboard 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowRight') {
-        handleNextClick();
+        slideForward();
         highlightActiveButton(nextButton);
     } else if (event.key === 'ArrowLeft') {
-        handlePrevClick();
+        slideBackward();
         highlightActiveButton(prevButton);
     }
 });
@@ -49,13 +49,10 @@ document.addEventListener('keyup', function(event) {
 });
 
 // highlight active button
-
 function highlightActiveButton(button) {
-
     document.querySelectorAll('.gallery-button button').forEach(btn => {
         btn.classList.remove('active-button');
     });
-
     button.classList.add('active-button');
 }
 

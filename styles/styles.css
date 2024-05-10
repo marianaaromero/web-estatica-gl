@@ -79,7 +79,7 @@ body {
 }
 
 .menu .brush {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin: 0 1rem;
     padding: 0;
 }
@@ -98,7 +98,7 @@ i {
 /* main content home */
 
 .main-content {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -365,6 +365,7 @@ i {
     width: 80%;
     height: 80%;
     box-shadow: 0 30px 50px #dbdbdb;
+    overflow-x: hidden;
 }
 
 
@@ -393,22 +394,26 @@ i {
 }
 
 
-.slide .item:nth-child(3){
+.slide .item:nth-child(3) {
     left: 50%;
 }
-.slide .item:nth-child(4){
+
+.slide .item:nth-child(4) {
     left: calc(50% + 14rem);
 }
-.slide .item:nth-child(5){
+
+.slide .item:nth-child(5) {
     left: calc(50% + 28rem);
 }
 
-.slide .item:nth-child(6){
+.slide .item:nth-child(6) {
     left: calc(50% + 42rem);
-display: none;}
+    opacity: 0;
+    right: 100px;
+}
 
 
-.item .content{
+.item .content {
     position: absolute;
     top: 50%;
     left: 100px;
@@ -419,12 +424,12 @@ display: none;}
     display: none;
 }
 
-.slide .item:nth-child(2) .content{
+.slide .item:nth-child(2) .content {
     display: block;
 }
 
 
-.content .name{
+.content .name {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -432,14 +437,14 @@ display: none;}
     animation: animate 1s ease-in-out 1 forwards;
 }
 
-.content .des{
+.content .des {
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content button{
+.content button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -459,7 +464,7 @@ display: none;}
 .gallery-button span {
     color: #2c3527bd;
 }
- 
+
 .gallery-button button {
     width: 2rem;
     height: 2rem;
@@ -467,7 +472,7 @@ display: none;}
     border: none;
     cursor: pointer;
     box-shadow: 0px 0px 25px #323b2d;
-    background-color: #7da36988 ;
+    background-color: #7da36988;
     transition: 0.3s;
 }
 
