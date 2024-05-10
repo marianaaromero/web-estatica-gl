@@ -364,7 +364,6 @@ i {
     transform: translate(-50%, -40%);
     width: 80%;
     height: 80%;
-    background-color: #FFF;
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
@@ -474,6 +473,11 @@ display: none;}
 
 .gallery-button button:hover {
     background: #b6dba0c9;
+}
+
+.gallery-button .active-button {
+    background: #b6dba0c9;
+    transition: transform 9s ease;
 }
 
 /* KEYFRAMES */
