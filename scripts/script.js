@@ -12,7 +12,7 @@ brush.addEventListener("click", function() {
     }
 });
 
-// slider button
+// button slider
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 const slide = document.querySelector('.slide');
@@ -62,3 +62,4 @@ function removeActiveButtonHighlight() {
         btn.classList.remove('active-button');
     })
 }
+

@@ -364,10 +364,10 @@ i {
     transform: translate(-50%, -40%);
     width: 80%;
     height: 80%;
-    box-shadow: 0 30px 50px #dbdbdb;
+    box-shadow: 0 10px 50px #bbd3c0;
     overflow: hidden;
+    border-radius: 10px;
 }
-
 
 .gallery-container .slide .item {
     width: 13rem;
@@ -376,7 +376,7 @@ i {
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
+    box-shadow: 0 4px 17px #111813e0;
     background-position: 20% 20%;
     background-size: cover;
     display: inline-block;
@@ -419,9 +419,13 @@ i {
     left: 100px;
     width: 300px;
     text-align: left;
-    color: #eee;
+    color: #eeeeee;
     transform: translate(0, -50%);
     display: none;
+    padding: 1rem;
+    font-weight: 900;
+    font-stretch: expanded;
+    text-shadow: 1px 10px 15px #323b2d;
 }
 
 .slide .item:nth-child(2) .content {
@@ -430,7 +434,7 @@ i {
 
 
 .content .name {
-    font-size: 40px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -442,6 +446,7 @@ i {
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
+    font-style: italic;
 }
 
 .content button {
@@ -453,7 +458,7 @@ i {
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-
+/* slider buttons */
 .gallery-button {
     width: 100%;
     text-align: center;
@@ -512,19 +517,17 @@ i {
     from {
         opacity: 0;
         transform: translate(0, 100px);
-        filter: blur(33px);
     }
 
     to {
         opacity: 1;
         transform: translate(0);
-        filter: blur(0);
     }
 }
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
     .header-content {
         margin: 0 5%;
     }
@@ -554,5 +557,26 @@ i {
         width: 300px;
         padding: 0.625em;
         margin: 0.313em;
+    }
+
+    .gallery-container {
+        width: 90%;
+    }
+
+    .slide .item:nth-child(3),
+    .slide .item:nth-child(4) {
+        left: 100%;
+    }
+
+    .item .content,
+    .item .content .name {
+        width: 60%;
+        left: 5%;
+        font-size: 0.9rem;
+        margin-right: 60%;
+    }
+
+    .item .content .name {
+        font-size: 1.5rem;
     }
 }
