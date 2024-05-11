@@ -55,7 +55,6 @@ function createGalleryItems() {
             <article class="content">
                 <h2 class="name">${item.name} <span>${item.date}</span></h2>
                 <p class="des">${item.description}</p>
-                <button>See More</button>
             </article>
         `;
         slide.appendChild(galleryItem);
