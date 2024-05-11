@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #8CA87C;
+    color: #FFF9F3;
+    transition: all 0.3s;
+    font-family: "Artifika", serif;
+}
+
+/* HOME */
+
+/* barra de navegación*/
+.home-header {
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: #6D8261;
+    box-shadow: 0 6px 25px -20px black;
+    z-index: 2;
+}
+
+/* contenido de la barra de navegación */
+.header-content {
+    margin: 0px 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    font-size: 1.5rem;
+}
+
+#logo b {
+    color: #c1ddb1;
+}
+
+
+/*Menu*/
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+/* lista del menú */
+.menu ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+/* cada ítem del menú */
+.menu li {
+    margin: 0 1rem;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* enlaces del menú */
+.menu a {
+    color: #FFF9F3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1.2rem;
+}
+
+.menu .brush {
+    font-size: 1.5rem; 
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.menu a:hover,
+.menu i:hover {
+    background-color: rgba(151, 167, 119, 0.822);
+    border-radius: 5px;
+}
+
+i {
+    padding: 20px;
+}
+
+
