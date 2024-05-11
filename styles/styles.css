@@ -416,7 +416,7 @@ i {
 .item .content {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 4rem;
     width: 300px;
     text-align: left;
     color: #eeeeee;
@@ -579,4 +579,27 @@ i {
     .item .content .name {
         font-size: 1.5rem;
     }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1000px) {
+    .gallery-container {
+        width: 90%;
+    }
+
+    .slide .item:nth-child(3) {
+        left: calc(50% + 5rem);
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 19.5rem);
+    }
+
+    .item .content,
+    .item .content .name {
+        width: 60%;
+        left: 3%;
+        margin-right: 60%;
+        padding-right: 10rem;
+    }
+
 }
