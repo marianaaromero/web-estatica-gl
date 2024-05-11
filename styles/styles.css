@@ -300,7 +300,7 @@ i {
 
 .header {
     background-color: #6D8261;
-    width: 43.75em;
+    width: 30em;
     padding: 0.625em;
     border-radius: 10px;
 }
@@ -311,14 +311,14 @@ i {
 
 .question-image {
     object-fit: cover;
-    height: 25em;
+    height: 20em;
     width: 100%;
 }
 
 .btn {
     background-color: #6D8261;
     color: #FFF9F3;
-    width: 43.75em;
+    width: 30em;
     padding: 0.625em;
     margin: 0.313em;
     border: none;
