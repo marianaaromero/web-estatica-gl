@@ -38,30 +38,27 @@ body {
 
 #logo {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #logo b {
     color: #c1ddb1;
 }
 
-
-/*Menu*/
+/* menu */
 .menu {
     display: flex;
     align-items: center;
 }
 
-
-/* lista del menú */
 .menu ul {
     padding: 0;
     display: flex;
     list-style: none;
 }
 
-/* cada ítem del menú */
 .menu li {
-    margin: 0 1rem;
+    margin: 0 0.4rem;
     padding: 0;
     height: 100%;
     display: flex;
@@ -78,10 +75,15 @@ body {
     padding: 1.2rem;
 }
 
-.menu .brush {
+.menu .brush,
+.menu .mobile-nav {
     font-size: 1.5rem;
-    margin: 0 1rem;
     padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
 }
 
 .menu a:hover,
@@ -94,6 +96,16 @@ i {
     padding: 1em;
 }
 
+/* mobile menu navigation bar*/
+
+.menu .mobile-nav {
+    display: none;
+}
+
+.menu .mobile-nav i {
+    outline: none;
+}
+
 
 /* main content home */
 
@@ -102,7 +114,6 @@ i {
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .cover-section {
     width: 100%;
@@ -192,19 +203,20 @@ i {
 .news-section,
 .carousel-section,
 .artworks-section {
-    padding: 0.625em;
+    padding: 0;
     margin: 0;
 }
 
 /* highlights */
 
 .artworks-gallery {
-    margin: 0 10%;
     box-sizing: border-box;
     display: grid;
     grid:
         "painting1 painting3" 1fr "painting2 painting3" 1fr / 1fr 1fr;
     gap: 20px;
+    width: 60%;
+    margin: auto;
 }
 
 #painting1 {
@@ -525,7 +537,7 @@ i {
     }
 
     .menu ul li {
-        margin: 0 0.5rem;
+        margin: 0;
     }
 
     .cover-section {
@@ -570,6 +582,28 @@ i {
 
     .item .content .name {
         font-size: 1.5rem;
+    }
+
+    /* menu for mobile devices */
+    .menu ul {
+        display: none;
+    }
+
+    .menu .mobile-nav {
+        display: block;
+        align-items: left;
+        margin-left: 15%;
+    }
+
+    .mobile-menu {
+        clip-path: circle(112% at 100% 0%);
+    }
+
+    .menu ul li a:after {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+
     }
 }
 
