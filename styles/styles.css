@@ -192,6 +192,14 @@ i {
     animation-delay: 2s;
 }
 
+#monet-portrait {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    mask-image: linear-gradient(black 70%,
+            transparent);
+}
 
 /* titles */
 .title-section-content {
