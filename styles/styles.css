@@ -106,6 +106,9 @@ i {
     outline: none;
 }
 
+.menu ul.show-menu {
+    display: block;
+}
 
 /* main content home */
 
