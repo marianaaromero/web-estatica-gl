@@ -14,3 +14,17 @@ brush.addEventListener("click", function () {
         state = false;
     }
 });
+
+// RESPONSIVE MENU - NAV BAR
+
+document.querySelector('.menu .mobile-nav').addEventListener('click', function() {
+    document.querySelector('.menu ul').classList.toggle('show');
+});
+
+/* function toggleMenu(navSelector, menuSelector) {
+    document.querySelector(navSelector).addEventListener('click', function() {
+        document.querySelector(menuSelector).classList.toggle('show');
+    });
+}
+
+toggleMenu('.menu .mobile-nav', '.menu ul'); */
