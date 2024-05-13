@@ -606,17 +606,21 @@ i {
         top: 4rem;
         right: 0;
         display: none;
-        padding: 1rem 4rem;
+        padding: 0 0;
         box-sizing: border-box;
+        border-bottom-left-radius: 5px;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .menu ul li a {
+        width: 100%;
     }
 
     .menu ul.show {
         display: block;
-        /* o cualquier otro valor para mostrar el menú */
-    }
-
-    .mobile-menu {
-        clip-path: circle(112% at 100% 0%);
     }
 
 }
