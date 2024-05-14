@@ -5,7 +5,7 @@ let state = false;
 
 brush.addEventListener("click", function () {
     if (!state) {
-        document.body.style.backgroundColor = "#FFF9F3";
+        document.body.style.backgroundColor = "#cfe1b9";
         header.style.backgroundColor = "#8CA87C";
         state = true;
     } else {
@@ -14,6 +14,7 @@ brush.addEventListener("click", function () {
         state = false;
     }
 });
+
 
 // RESPONSIVE MENU - NAV BAR
 
