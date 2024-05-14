@@ -28,7 +28,7 @@ body {
 
 /* contenido de la barra de navegación */
 .header-content {
-    margin: 0px 10%;
+    margin: 0px 5%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -192,14 +192,6 @@ i {
     animation-delay: 2s;
 }
 
-#monet-portrait {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    mask-image: linear-gradient(black 70%,
-            transparent);
-}
 
 /* titles */
 .title-section-content {
@@ -220,6 +212,36 @@ i {
 .artworks-section {
     padding: 0;
     margin: 0;
+}
+
+/* intro */
+#intro-text {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #323b2d4f;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+#intro-text h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#intro-text p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#monet-portrait {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    mask-image: linear-gradient(black 70%,
+            transparent);
 }
 
 /* highlights */
