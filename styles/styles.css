@@ -112,7 +112,6 @@ i {
 }
 
 
-
 /*HOME*/
 
 /* main content home */
@@ -194,24 +193,16 @@ i {
 
 /* titles */
 .title-section-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
     font-size: 2rem;
-    padding: 1.25em;
+    padding-block: 2rem;
     text-shadow: 5px -3px 1px #5b6e51c4;
+    margin: 0 5%;
 }
 
-.news-section,
-.carousel-section,
-.artworks-section {
-    padding: 0;
-    margin: 0;
-}
 
 /* intro */
 #intro-text {
