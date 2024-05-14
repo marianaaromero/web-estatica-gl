@@ -41,7 +41,7 @@ function light() {
 
 // RESPONSIVE MENU - NAV BAR
 
-document.querySelector('.menu .mobile-nav').addEventListener('click', function() {
+document.querySelector('.menu .mobile-nav').addEventListener('click', function () {
     document.querySelector('.menu ul').classList.toggle('show');
 });
 

@@ -11,9 +11,7 @@ body {
     font-family: "Artifika", serif;
 }
 
-/* HOME */
-
-/* barra de navegación*/
+/*BARRA DE NAVEGACION*/
 .home-header {
     text-decoration: none;
     position: fixed;
@@ -101,7 +99,6 @@ i {
 }
 
 /* mobile menu navigation bar*/
-
 .menu .mobile-nav {
     display: none;
 }
@@ -114,8 +111,11 @@ i {
     display: block;
 }
 
-/* main content home */
 
+
+/*HOME*/
+
+/* main content home */
 .main-content {
     margin: 0;
     padding: 0;
@@ -192,7 +192,6 @@ i {
     animation-delay: 2s;
 }
 
-
 /* titles */
 .title-section-content {
     display: flex;
@@ -245,7 +244,6 @@ i {
 }
 
 /* highlights */
-
 .artworks-gallery {
     box-sizing: border-box;
     display: grid;
@@ -287,7 +285,6 @@ i {
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 .overlay {
     position: absolute;
@@ -394,7 +391,9 @@ i {
 }
 
 
+
 /* TRIVIA */
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -457,7 +456,9 @@ i {
 }
 
 
-/*GALERY*/
+
+/*GALLERY*/
+
 .gallery-main {
     padding: 0;
     box-sizing: border-box;
@@ -520,7 +521,6 @@ i {
     right: 100px;
 }
 
-
 .item .content {
     position: absolute;
     top: 50%;
@@ -540,7 +540,6 @@ i {
     display: block;
 }
 
-
 .content .name {
     font-size: 2rem;
     text-transform: uppercase;
@@ -556,7 +555,6 @@ i {
     animation: animate 1s ease-in-out 0.3s 1 forwards;
     font-style: italic;
 }
-
 
 /* slider buttons */
 .gallery-button {
@@ -590,6 +588,8 @@ i {
     transition: transform 9s ease;
 }
 
+
+
 /* KEYFRAMES */
 
 /* home keyframes */
@@ -612,7 +612,6 @@ i {
 }
 
 /* gallery keyframes */
-
 @keyframes animate {
     from {
         opacity: 0;
@@ -627,6 +626,7 @@ i {
 
 
 /* MEDIA QUERIES */
+
 @media only screen and (max-width: 780px) {
     .header-content {
         margin: 0 5%;
