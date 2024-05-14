@@ -52,3 +52,22 @@ document.querySelector('.menu .mobile-nav').addEventListener('click', function (
 }
 
 toggleMenu('.menu .mobile-nav', '.menu ul'); */
+
+
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    
+    const storedEmail = localStorage.getItem('email');
+
+    if (storedEmail === email) {
+        alert('You are already subscribed with this email!');
+        return; 
+    }
+    localStorage.setItem('email', email);
+
+    document.getElementById('email').value = '';
+
+    alert('Thank you for subscribing!');
+});
