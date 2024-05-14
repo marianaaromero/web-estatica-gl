@@ -1,40 +1,35 @@
 //MODO CLARO - MODO OSCURO
 const brush = document.querySelector(".menu .brush");
-const header = document.querySelector("header");
+const body = document.body;
 
-//Local Storage 
-//Verifica si hay un tema almacenado en el localStorage
+// Local Storage
 let state = localStorage.getItem("theme") === "dark";
 
 if (state) {
-    dark();
+    applyDarkTheme();
 } else {
-    light();
+    applyLightTheme();
 }
-
 
 brush.addEventListener("click", function () {
     if (!state) {
-        dark();
+        applyDarkTheme();
         state = true;
     } else {
-        light();
+        applyLightTheme();
         state = false;
     }
 
-    //Local Storage 
+    // Local Storage
     localStorage.setItem("theme", state ? "dark" : "light");
 });
 
-
-function dark() {
-    document.body.style.backgroundColor = "#cfe1b9";
-    header.style.backgroundColor = "#8CA87C";
+function applyDarkTheme() {
+    body.classList.remove("light");
 }
 
-function light() {
-    document.body.style.backgroundColor = "#8CA87C";
-    header.style.backgroundColor = "#6D8261";
+function applyLightTheme() {
+    body.classList.add("light");
 }
 
 
@@ -70,4 +65,5 @@ document.querySelector('.menu .mobile-nav').addEventListener('click', function (
 }
 
 toggleMenu('.menu .mobile-nav', '.menu ul'); */
+
 
