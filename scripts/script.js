@@ -38,22 +38,7 @@ function light() {
 }
 
 
-
-// RESPONSIVE MENU - NAV BAR
-
-document.querySelector('.menu .mobile-nav').addEventListener('click', function () {
-    document.querySelector('.menu ul').classList.toggle('show');
-});
-
-/* function toggleMenu(navSelector, menuSelector) {
-    document.querySelector(navSelector).addEventListener('click', function() {
-        document.querySelector(menuSelector).classList.toggle('show');
-    });
-}
-
-toggleMenu('.menu .mobile-nav', '.menu ul'); */
-
-
+// email for subscribing - local storage
 document.getElementById('subscribe-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -71,3 +56,18 @@ document.getElementById('subscribe-form').addEventListener('submit', function(ev
 
     alert('Thank you for subscribing!');
 });
+
+// RESPONSIVE MENU - NAV BAR
+
+document.querySelector('.menu .mobile-nav').addEventListener('click', function () {
+    document.querySelector('.menu ul').classList.toggle('show');
+});
+
+/* function toggleMenu(navSelector, menuSelector) {
+    document.querySelector(navSelector).addEventListener('click', function() {
+        document.querySelector(menuSelector).classList.toggle('show');
+    });
+}
+
+toggleMenu('.menu .mobile-nav', '.menu ul'); */
+
