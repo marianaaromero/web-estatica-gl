@@ -352,7 +352,7 @@ i {
     width: 30em;
     padding: 0.625em;
     border-radius: 10px;
-    box-shadow: 0 10px 50px #bbd3c0;
+    box-shadow: 0 10px 50px black;
 }
 
 .question {
@@ -377,7 +377,7 @@ i {
     font-family: "Artifika", serif;
     border-radius: 10px;
     border: 2px solid #6D8261;
-    box-shadow: 0 10px 50px #bbd3c0;
+    box-shadow: 0 10px 50px black;
 }
 
 .btn:hover:not([disabled]) {
@@ -587,6 +587,10 @@ i {
         font-size: 0.5rem;
     }
 
+    .container {
+        font-size: 1rem;
+    }
+
     .header {
         background-color: #6D8261;
         width: 300px;
@@ -598,6 +602,7 @@ i {
         width: 300px;
         padding: 0.625em;
         margin: 0.313em;
+        font-size: 1rem;
     }
 
     .gallery-container {

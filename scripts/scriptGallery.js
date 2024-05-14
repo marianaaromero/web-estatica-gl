@@ -94,24 +94,4 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-document.addEventListener('keyup', function (event) {
-    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
-        removeActiveButtonHighlight();
-    }
-});
-
-function highlightActiveButton(button) {
-
-    removeActiveButtonHighlight();
-    button.classList.add('active');
-}
-
-function removeActiveButtonHighlight() {
-    const buttons = document.querySelectorAll('.gallery-button button');
-    buttons.forEach(button => {
-        button.classList.remove('active');
-    });
-}
-
-
 createGalleryItems();
