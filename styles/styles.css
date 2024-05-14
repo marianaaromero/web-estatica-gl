@@ -334,6 +334,65 @@ i {
 }
 
 
+/* newsletter section (SUBSCRIBE) */
+.newsletter-section {
+    text-align: center;
+}
+
+.newsletter-section h3 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-inline: 10rem;
+}
+
+.newsletter-section p b {
+    color: #30573f;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+#subscribe-form input[type="email"] {
+    max-width: 30rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+#email::placeholder {
+    color: #91b19b;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#subscribe-form button {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    background-color: #6D8261;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+#subscribe-form button:hover {
+    background-color: #556B52;
+}
+
 
 /* TRIVIA */
 .container {
