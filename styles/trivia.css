@@ -1,0 +1,62 @@
+/* TRIVIA */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header {
+    background-color: #6D8261;
+    width: 30em;
+    padding: 0.625em;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px black;
+}
+
+.question {
+    padding: 0.5em;
+}
+
+.question-image {
+    object-fit: cover;
+    height: 20em;
+    width: 100%;
+}
+
+.btn {
+    background-color: #6D8261;
+    color: #FFF9F3;
+    width: 30em;
+    padding: 0.625em;
+    margin: 0.313em;
+    border: none;
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Artifika", serif;
+    border-radius: 10px;
+    border: 2px solid #6D8261;
+    box-shadow: 0 10px 50px black;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #FFF9F3;
+    color: #8CA87C;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.correct {
+    border: 2px solid rgb(16, 92, 16);
+}
+
+.incorrect {
+    border: 2px solid rgb(211, 66, 66);
+}
