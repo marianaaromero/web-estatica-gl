@@ -461,13 +461,37 @@
         font-size: 0.5rem;
     }
 
+    #intro-text {
+        padding: 2rem;
+        text-align: justify;
+        font-size: 0.2rem;
+    }
+
+    .about-monet {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        text-align: justify;
+    }
+
+    #monet-description {
+        padding-right: 0;
+    }
+
+    .artworks-gallery {
+        width: 90%;
+    }
+
     .footer {
-        display: block;
-        text-align: center;
+        grid-template-columns: 1fr;
     }
 
-    .footer-content {
-        margin-bottom: 2rem;
+    .about-monet {
+        font-size: 1.1rem;
     }
 
+    .experiences, 
+    #about,
+    #subs {
+        display: none;
+    }
 }
