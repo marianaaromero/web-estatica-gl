@@ -793,3 +793,42 @@ i {
     }
 
 }
+
+/* Estilos específicos para el modo claro */
+
+/*Body*/
+.light {
+    background-color: #f9dbbd;
+    color: #718355;
+}
+
+/*Botones, contenido de trivia y nav*/
+.light button,
+.light .header,
+.light #subscribe-form button,
+.light header {
+    background-color: #718355;
+    color: #f9dbbd;
+}
+
+/*Texto de subscribe y texto de nav*/
+.light #email::placeholder,
+.light a {
+    color: #f9dbbd;
+}
+
+/*Hover*/
+.light .gallery-button button:hover,
+.light .menu a:hover,
+.light .menu i:hover,
+.light .actions button:hover,
+.light #subscribe-form button:hover,
+.light .gallery-button button:hover,
+.light .btn:hover:not([disabled]) {
+    background-color: #b5c99a;
+    color: #718355;
+}
+
+.light .title-section-content {
+    text-shadow: 5px -3px 1px #e1e6dec4;
+}
