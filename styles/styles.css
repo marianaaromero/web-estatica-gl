@@ -180,10 +180,14 @@ i {
     color: #f9dbbd;
 }
 
-/*Texto de subscribe y texto de nav*/
-.light #email::placeholder,
+/*Texto de nav*/
 .light a {
     color: #f9dbbd;
+}
+
+/*Texto de subscribe*/
+.light #email::placeholder {
+    color: #718355;
 }
 
 /*Hover*/
@@ -200,4 +204,8 @@ i {
 
 .light .title-section-content {
     text-shadow: 5px -3px 1px #e1e6dec4;
+}
+
+.light #intro-text {
+    background-color: #323b2d4f;
 }
