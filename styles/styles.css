@@ -206,12 +206,9 @@ i {
 
 /* intro */
 #intro-text {
-    max-width: 90%;
-    margin: 0 auto;
     margin-top: 3rem;
-    background-color: #323b2d4f;
-    padding: 2rem;
-    border-radius: 20px;
+    background-color: #556b52cc;
+    padding: 2rem 5rem;
 }
 
 #intro-text h3 {
@@ -223,15 +220,43 @@ i {
 #intro-text p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+
+.about-monet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 5%;
+    background-color: #323b2d4f;
+    padding: 2rem;
+    border-radius: 20px;
 }
 
 #monet-portrait {
-    display: block;
-    margin: 0 auto;
+    margin: 0;
     max-width: 100%;
     height: auto;
     mask-image: linear-gradient(black 70%,
             transparent);
+    overflow: hidden;
+}
+
+#monet-description {
+    line-height: 1.7rem;
+    padding-right: 8rem;
+}
+
+#monet-description h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#monet-description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* highlights */
