@@ -171,17 +171,21 @@ i {
     color: #718355;
 }
 
-/*Botones, contenido de trivia y nav*/
+/*Botones, contenido de trivia, nav, footer, btn up y social icons*/
 .light button,
 .light .header,
 .light #subscribe-form button,
-.light header {
+.light header,
+.light footer, 
+.light #button-up, 
+.light .social-icons a {
     background-color: #718355;
     color: #f9dbbd;
 }
 
-/*Texto de nav*/
-.light a {
+/*Texto de nav y material symbols*/
+.light a,
+.light .material-symbols-outlined {
     color: #f9dbbd;
 }
 
@@ -197,8 +201,12 @@ i {
 .light .actions button:hover,
 .light #subscribe-form button:hover,
 .light .gallery-button button:hover,
-.light .btn:hover:not([disabled]) {
+.light .btn:hover:not([disabled]){
     background-color: #b5c99a;
+    color: #718355;
+}
+
+.light .material-symbols-outlined:hover {
     color: #718355;
 }
 
