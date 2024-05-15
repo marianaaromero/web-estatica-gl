@@ -60,3 +60,19 @@
 .incorrect {
     border: 2px solid rgb(211, 66, 66);
 }
+
+@media only screen and (max-width: 780px) {
+    .container {
+        font-size: 1rem;
+    }
+
+
+    .btn {
+        background-color: #6D8261;
+        width: 300px;
+        padding: 0.625em;
+        margin: 0.313em;
+        font-size: 1rem;
+    }
+
+}
