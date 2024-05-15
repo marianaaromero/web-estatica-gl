@@ -349,6 +349,34 @@
     background-color: #556B52;
 }
 
+#button-up {
+    width: 55px;
+    height: 55px;
+    background: #556B52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover {
+    transform: scale(1.1);
+    border-color: #38614759;
+}
+
+#button-up span {
+    font-size: 2.4rem;
+}
+
+
 /* footer */
 .footer {
     background-color: #556B52;
