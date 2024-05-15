@@ -18,7 +18,4 @@ Monet's Gaze es una página web estática que sirve como galería virtual dedica
 - JavaScript para la funcionalidad interactiva, incluyendo el carrousel slider y la trivia.
 - Local Storage para almacenar las preferencias del usuario.
 
-## Instalación
-
-No se requiere ninguna instalación especial. Simplemente abre el archivo HTML en un navegador web compatible.
 
