@@ -11,7 +11,7 @@
     font-size: 1.5rem;
 }
 
-.header {
+.header-trivia {
     background-color: #6D8261;
     width: 30em;
     padding: 0.625em;
@@ -66,6 +66,11 @@
         font-size: 1rem;
     }
 
+    .header-trivia {
+        background-color: #6D8261;
+        width: 300px;
+        padding: 0.625em;
+    }
 
     .btn {
         background-color: #6D8261;

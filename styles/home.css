@@ -423,10 +423,6 @@
 
 @media only screen and (max-width: 780px) {
 
-    .menu ul li {
-        margin: 0;
-    }
-
     .cover {
         width: 100%;
     }

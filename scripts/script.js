@@ -2,6 +2,7 @@
 const brush = document.querySelector(".menu .brush");
 const body = document.body;
 
+
 // Local Storage
 let state = localStorage.getItem("theme") === "dark";
 
@@ -19,7 +20,7 @@ brush.addEventListener("click", function () {
         applyLightTheme();
         state = false;
     }
-
+    
     // Local Storage
     localStorage.setItem("theme", state ? "dark" : "light");
 });
@@ -32,6 +33,13 @@ function applyLightTheme() {
     body.classList.add("light");
 }
 
+// RESPONSIVE MENU - NAV BAR
+
+const menuButton = document.querySelector(".menu .mobile-nav");
+
+menuButton.addEventListener("click", function () {
+    document.querySelector(".menu ul").classList.toggle("show");
+});
 
 // email for subscribing - local storage
 document.getElementById('subscribe-form').addEventListener('submit', function(event) {
@@ -52,11 +60,6 @@ document.getElementById('subscribe-form').addEventListener('submit', function(ev
     alert('Thank you for subscribing!');
 });
 
-// RESPONSIVE MENU - NAV BAR
-
-document.querySelector('.menu .mobile-nav').addEventListener('click', function () {
-    document.querySelector('.menu ul').classList.toggle('show');
-});
 
 /* function toggleMenu(navSelector, menuSelector) {
     document.querySelector(navSelector).addEventListener('click', function() {
@@ -65,5 +68,3 @@ document.querySelector('.menu .mobile-nav').addEventListener('click', function (
 }
 
 toggleMenu('.menu .mobile-nav', '.menu ul'); */
-
-

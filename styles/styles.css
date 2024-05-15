@@ -12,7 +12,7 @@ body {
 }
 
 /*BARRA DE NAVEGACION*/
-.home-header {
+.header {
     text-decoration: none;
     position: fixed;
     top: 0;
@@ -120,12 +120,17 @@ i {
 
     .header {
         background-color: #6D8261;
-        width: 300px;
+        width: 100%;
         padding: 0.625em;
     }
 
 
     /* menu for mobile devices */
+    
+    .menu ul li {
+        margin: 0;
+    }
+    
     .menu .mobile-nav {
         display: block;
         align-items: left;
