@@ -326,6 +326,11 @@ i {
 .newsletter-section {
     text-align: center;
     margin-bottom: 2rem;
+    align-items: center;
+}
+
+.newsletter-section h2 {
+    text-align: start;
 }
 
 .newsletter-section h3 {
@@ -334,8 +339,7 @@ i {
 
 .newsletter-section p {
     font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-inline: 10rem;
+    margin: 0 9rem;
 }
 
 .newsletter-section p b {
@@ -343,6 +347,7 @@ i {
 }
 
 #subscribe-form {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -728,7 +733,6 @@ i {
     .menu .mobile-nav {
         display: block;
         align-items: left;
-        margin-left: 15%;
     }
 
     .menu ul {
@@ -756,6 +760,15 @@ i {
         display: block;
     }
 
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media only screen and (min-width: 780px) and (max-width: 1000px) {
@@ -779,43 +792,4 @@ i {
         padding-right: 10rem;
     }
 
-}
-
-/* Estilos específicos para el modo claro */
-
-/*Body*/
-.light {
-    background-color: #f9dbbd;
-    color: #718355; 
-}
-
-/*Botones, contenido de trivia y nav*/
-.light button,
-.light .header,
-.light #subscribe-form button,
-.light header {
-    background-color:  #718355;
-    color: #f9dbbd;
-}
-
-/*Texto de subscribe y texto de nav*/
-.light #email::placeholder,
-.light a {
-    color: #f9dbbd;
-}
-
-/*Hover*/
-.light .gallery-button button:hover,
-.light .menu a:hover,
-.light .menu i:hover,
-.light .actions button:hover,
-.light #subscribe-form button:hover,
-.light .gallery-button button:hover,
-.light .btn:hover:not([disabled]) {
-    background-color: #b5c99a;
-    color: #718355;
-}
-
-.light .title-section-content {
-    text-shadow: 5px -3px 1px #e1e6dec4;
 }
