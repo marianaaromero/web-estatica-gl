@@ -116,12 +116,12 @@
     border: none;
     cursor: pointer;
     box-shadow: 0px 0px 25px #323b2d;
-    background-color: #7da36988;
+    background-color: #658870;
     transition: 0.3s;
 }
 
 .gallery-button button:hover {
-    background: #b6dba0c9;
+    background: #b2e0c1a9;
 }
 
 .gallery-button .active-button {

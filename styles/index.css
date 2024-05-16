@@ -93,7 +93,7 @@
 /* intro */
 #intro-text {
     margin-top: 3rem;
-    background-color: #556b52cc;
+    background-color: #4a6954;
     padding: 2rem 5rem;
 }
 
@@ -174,7 +174,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background-color: #8CA87C;
+    background-color: #4a6954;
     border-radius: 10px;
     box-shadow: 10px -10px 20px #5b6e51c4;
 }
@@ -220,7 +220,7 @@
 
 .actions button {
     background-color: #FFF;
-    color: #6D8261;
+    color: #618269;
     border: none;
     padding: 0.313em 0.625em;
     border-radius: 5px;
@@ -241,7 +241,7 @@
 }
 
 .experiences-content article {
-    background-color: #6d82619c;
+    background-color: #4a6954;
     border-radius: 10px;
     padding: 1rem;
     width: 50%;
@@ -335,24 +335,25 @@
 
 #subscribe-form button {
     padding: 1rem 1rem;
-    font-size: 1.2rem;
-    background-color: #6D8261;
+    font-size: 1.1rem;
+    background-color: #4a6954;
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
     transition: background-color 0.3s;
 
 }
 
 #subscribe-form button:hover {
-    background-color: #556B52;
+    background-color: #85bd97e5;
 }
 
 #button-up {
     width: 55px;
     height: 55px;
-    background: #556B52;
+    background: #3a5241;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +370,7 @@
 
 #button-up:hover {
     transform: scale(1.1);
-    border-color: #38614759;
+    border-color: #2c3f32;
 }
 
 #button-up span {
@@ -379,7 +380,7 @@
 
 /* footer */
 .footer {
-    background-color: #556B52;
+    background-color: #3a5241;
     padding: 20px 0;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;

@@ -17,7 +17,7 @@ body {
 }
 
 .header-trivia {
-    background-color: #6D8261;
+    background-color: #658870;
     width: 30em;
     margin-top: 1rem;
     padding: 0.625em;
@@ -41,7 +41,7 @@ body {
 }
 
 .btn {
-    background-color: #6D8261;
+    background-color: #658870;
     color: #FFF9F3;
     width: 30em;
     padding: 0.625em;
@@ -51,13 +51,13 @@ body {
     font-size: 1.4rem;
     font-family: "Artifika", serif;
     border-radius: 10px;
-    border: 2px solid #6D8261;
+    border: 2px solid #658870;
     box-shadow: 0 10px 50px black;
 }
 
 .btn:hover:not([disabled]) {
-    background-color: #FFF9F3;
-    color: #8CA87C;
+    background-color: #edffef;
+    color: #658870;
 }
 
 .btn:disabled {
@@ -78,13 +78,11 @@ body {
     }
 
     .header-trivia {
-        background-color: #6D8261;
         width: 20rem;
         padding: 0.625em;
     }
 
     .btn {
-        background-color: #6D8261;
         width: 20rem;
         padding: 0.625em;
         margin: 0.313em;
