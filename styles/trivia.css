@@ -1,8 +1,13 @@
 /* TRIVIA */
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 20rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +19,7 @@
 .header-trivia {
     background-color: #6D8261;
     width: 30em;
+    margin-top: 1rem;
     padding: 0.625em;
     border-radius: 10px;
     box-shadow: 0 10px 50px black;
@@ -25,8 +31,13 @@
 
 .question-image {
     object-fit: cover;
-    height: 20em;
+    height: 15em;
     width: 100%;
+    border-radius: 10px;
+}
+
+.answer-buttons {
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -54,11 +65,11 @@
 }
 
 .correct {
-    border: 2px solid rgb(16, 92, 16);
+    border: 3px solid rgb(125, 248, 180);
 }
 
 .incorrect {
-    border: 2px solid rgb(211, 66, 66);
+    border: 3px solid rgb(248, 96, 96);
 }
 
 @media only screen and (max-width: 780px) {
@@ -68,13 +79,13 @@
 
     .header-trivia {
         background-color: #6D8261;
-        width: 300px;
+        width: 20rem;
         padding: 0.625em;
     }
 
     .btn {
         background-color: #6D8261;
-        width: 300px;
+        width: 20rem;
         padding: 0.625em;
         margin: 0.313em;
         font-size: 1rem;
