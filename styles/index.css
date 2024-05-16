@@ -1,0 +1,509 @@
+/*HOME*/
+
+/* main content home */
+.main-content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/1-cover-Nymphéas-Seerosen-1915.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+.cover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #323b2d;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.cover div {
+    margin-left: -20%;
+    padding-left: 20%;
+    justify-content: flex-start;
+}
+
+.cover h1 {
+    width: 100%;
+    position: relative;
+    color: transparent;
+    animation: text-reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.cover h1:nth-child(1) {
+    font-size: 2rem;
+    animation-delay: 1.5s;
+    width: fit-content;
+}
+
+.cover h1:nth-child(2) {
+    font-size: 4rem;
+    animation-delay: 2.5s;
+}
+
+.cover h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #323b2d;
+    animation: text-reveal-box 1s ease;
+    animation-delay: 1s;
+    overflow: hidden;
+}
+
+.cover h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+.cover h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+/* titles */
+.title-section-content {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding-block: 2rem;
+    text-shadow: 5px -3px 1px #5b6e51c4;
+    margin: 0 5%;
+}
+
+
+/* intro */
+#intro-text {
+    margin-top: 3rem;
+    background-color: #556b52cc;
+    padding: 2rem 5rem;
+}
+
+#intro-text h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#intro-text p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+
+.about-monet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 5%;
+    background-color: #323b2d4f;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+#monet-portrait {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    mask-image: linear-gradient(black 70%,
+            transparent);
+    overflow: hidden;
+}
+
+#monet-description {
+    line-height: 1.7rem;
+    padding-right: 8rem;
+}
+
+#monet-description h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#monet-description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* highlights */
+.artworks-gallery {
+    box-sizing: border-box;
+    display: grid;
+    grid:
+        "painting1 painting3" 1fr "painting2 painting3" 1fr / 1fr 1fr;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+#painting1 {
+    grid-area: painting1;
+}
+
+#painting3 {
+    grid-area: painting3;
+}
+
+#painting2 {
+    grid-area: painting2;
+}
+
+#painting1,
+#painting2,
+#painting3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #8CA87C;
+    border-radius: 10px;
+    box-shadow: 10px -10px 20px #5b6e51c4;
+}
+
+#painting1 img,
+#painting2 img,
+#painting3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF9F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#painting1:hover .overlay,
+#painting2:hover .overlay,
+#painting3:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h1 .overlay p {
+    margin: 0;
+}
+
+.actions {
+    margin-top: 0.625em;
+}
+
+.actions button {
+    background-color: #FFF;
+    color: #6D8261;
+    border: none;
+    padding: 0.313em 0.625em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #6D8261;
+    color: #FFF;
+}
+
+/* experiences section */
+
+.experiences-content {
+    margin: 0 5%;
+    display: flex;
+    gap: 2rem;
+}
+
+.experiences-content article {
+    background-color: #6d82619c;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiences-content article div {
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+}
+
+.experiences-content article h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.experiences-content article p {
+    margin-top: 1.4rem;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+}
+
+.experiences article a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 3px;
+    margin-top: auto;
+}
+
+.experiences article a span {
+    font-size: 8rem;
+}
+
+.experiences a:hover {
+    color: #556B52;
+}
+
+
+
+/* newsletter section (SUBSCRIBE) */
+.newsletter-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.newsletter-section h2 {
+    text-align: start;
+}
+
+.newsletter-section h3 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+    font-size: 1rem;
+    margin: 0 9rem;
+}
+
+.newsletter-section p b {
+    color: #30573f;
+}
+
+#subscribe-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+#subscribe-form input[type="email"] {
+    max-width: 30rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+#email::placeholder {
+    color: #91b19b;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#subscribe-form button {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    background-color: #6D8261;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+#subscribe-form button:hover {
+    background-color: #556B52;
+}
+
+#button-up {
+    width: 55px;
+    height: 55px;
+    background: #556B52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover {
+    transform: scale(1.1);
+    border-color: #38614759;
+}
+
+#button-up span {
+    font-size: 2.4rem;
+}
+
+
+/* footer */
+.footer {
+    background-color: #556B52;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    padding-inline: 5%;
+    color: #dae7de;
+
+}
+
+.footer-content {
+    line-height: 1.7rem;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+}
+
+.footer p,
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.social-icons li {
+    display: inline-block;
+    margin: 0;
+}
+
+.social-icons a {
+    color: #dae7de;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover,
+.footer ul li:hover {
+    color: #fff;
+    text-shadow: 0px 0px 4px #ffffffd2;
+}
+
+
+/* KEYFRAMES */
+
+/* home keyframes */
+@keyframes text-reveal-box {
+    50% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes text-reveal {
+    100% {
+        color: #FFF9F3;
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    .cover {
+        width: 100%;
+    }
+
+    .cover h1 {
+        width: fit-content;
+        margin: 5%;
+        font-size: 0.5rem;
+    }
+
+    #intro-text {
+        padding: 2rem;
+        text-align: justify;
+        font-size: 0.2rem;
+    }
+
+    .about-monet {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        text-align: justify;
+    }
+
+    #monet-description {
+        padding-right: 0;
+    }
+
+    .artworks-gallery {
+        width: 90%;
+    }
+
+    .footer li i {
+        font-size: 1rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: 0.8rem;
+    }
+
+    .about-monet {
+        font-size: 1.1rem;
+    }
+
+    .experiences,
+    #about,
+    #subs {
+        display: none;
+    }
+
+    #subscribe-form input[type="email"],
+    #subscribe-form button,
+    #email::placeholder {
+        padding: 0.8em;
+        font-size: 0.9rem;
+    }
+}

@@ -78,7 +78,8 @@ body {
 }
 
 .menu .brush,
-.menu .mobile-nav {
+.menu .mobile-nav,
+.menu .audio {
     font-size: 1.5rem;
     padding: 0;
     cursor: pointer;
@@ -89,12 +90,14 @@ body {
 }
 
 .menu a:hover,
-.menu i:hover {
+.menu i:hover,
+.menu span:hover {
     background-color: rgba(151, 167, 119, 0.822);
     border-radius: 5px;
 }
 
-i {
+.menu i,
+.menu span {
     padding: 1.2rem;
 }
 
@@ -130,7 +133,7 @@ i {
     .menu ul li {
         margin: 0;
     }
-    
+
     .menu .mobile-nav {
         display: block;
         align-items: left;
@@ -177,8 +180,8 @@ i {
 .light .header,
 .light #subscribe-form button,
 .light header,
-.light footer, 
-.light #button-up, 
+.light footer,
+.light #button-up,
 .light .social-icons a {
     background-color: #718355;
     color: #f9dbbd;
@@ -202,7 +205,7 @@ i {
 .light .actions button:hover,
 .light #subscribe-form button:hover,
 .light .gallery-button button:hover,
-.light .btn:hover:not([disabled]){
+.light .btn:hover:not([disabled]) {
     background-color: #b5c99a;
     color: #718355;
 }

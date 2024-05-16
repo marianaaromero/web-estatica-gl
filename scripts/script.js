@@ -41,6 +41,18 @@ menuButton.addEventListener("click", function () {
     document.querySelector(".menu ul").classList.toggle("show");
 });
 
+// MUSIC BUTTON
+function toggleAudio() {
+    const audio = document.getElementById("background-audio");
+    const control = document.getElementById("audio-icon");
+
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
 // email for subscribing - local storage
 document.getElementById('subscribe-form').addEventListener('submit', function(event) {
     event.preventDefault();

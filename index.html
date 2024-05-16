@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,6 +30,12 @@
                     <li><a href="pages/gallery.html">Gallery</a></li>
                     <li><a href="pages/trivia.html">Trivia</a></li>
                 </ul>
+                <div class="audio">
+                    <audio id="background-audio" src="/assets/indexTrack.mp3" loop></audio>
+                    <div id="audio-icom" onclick="toggleAudio()"><span class="material-symbols-outlined">
+                            music_note
+                        </span></div>
+                </div>
                 <div class="brush"><i class="ri-brush-line brush-line-icon"></i></div>
                 <div class="mobile-nav">
                     <i class="fas fa-bars"></i>
@@ -158,8 +164,9 @@
 
         <article class="newsletter-section">
             <h2 class="title-section-content">Newsletter</h2>
-            <h3 >Subscribe to MonetGaze</h3>
-            <p id="subs">Be <b>the first</b> to receive updates on <br> new exhibitions, special events, and <br> exclusive
+            <h3>Subscribe to MonetGaze</h3>
+            <p id="subs">Be <b>the first</b> to receive updates on <br> new exhibitions, special events, and <br>
+                exclusive
                 offers!</p>
             <form id="subscribe-form">
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
