@@ -93,7 +93,7 @@
 /* intro */
 #intro-text {
     margin-top: 3rem;
-    background-color: #4a6954;
+    background-color: #406b5d;
     padding: 2rem 5rem;
 }
 
@@ -328,7 +328,7 @@
 }
 
 #email::placeholder {
-    color: #91b19b;
+    color: #8fb99c;
     font-weight: bold;
     font-size: 1rem;
 }
