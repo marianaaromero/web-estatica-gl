@@ -189,7 +189,31 @@ body {
     color: #2f5840;
 }
 
+.light .title-section-content {
+    color: #FFF9F3;
+    text-shadow: 7px -10px 1px #3f836b;
+}
+
+.light .about-monet,
+.light #intro-text {
+    background-color: #62b196;
+}
+
+.light .experiences article {
+    background-color: #62b196;
+}
+
+.light .experiences article a {
+    color: #3a6b5b;
+}
+
+.light .experiences article a:hover {
+    color: #fff;
+}
+
+
 /*Texto de nav y material symbols*/
+.light #logo b,
 .light .menu i,
 .light .menu .material-symbols-outlined,
 .light .experiences-content article {
@@ -207,10 +231,6 @@ body {
     color: #3a6b5b;
 }
 
-.light #logo b {
-    color: #fff;
-}
-
 /*Texto de subscribe*/
 .light #email::placeholder {
     color: #648376;
@@ -219,6 +239,7 @@ body {
 /*Hover*/
 .light .gallery-button button:hover,
 .light .menu i:hover,
+.light .menu span:hover,
 .light .actions button:hover,
 .light #subscribe-form button:hover,
 .light .gallery-button button:hover,
@@ -226,17 +247,4 @@ body {
 .light .btn:hover:not([disabled]) {
     background-color: #dbf3eb;
     color: #336352;
-}
-
-.light .material-symbols-outlined:hover {
-    color: #dbf3eb;
-}
-
-.light .title-section-content {
-    color: #FFF9F3;
-    text-shadow: 7px -10px 1px #3f836b;
-}
-
-.light #intro-text {
-    background-color: #323b2d4f;
 }
