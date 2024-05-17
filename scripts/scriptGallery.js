@@ -7,19 +7,19 @@ const galleryItems = [
         description: 'Monet painted 25 pieces in the "Haystack" series, focusing on haystacks post-harvest and pioneering light and shadow experimentation...'
     },
     {
-        imageUrl: '../assets/gallery/puenteDeArgenteuil.jpg',
+        imageUrl: '../assets/gallery/puenteDeArgenteuil.webp',
         name: 'Le pont d\'Argenteuil',
         date: '✦1874',
         description: 'The Argenteuil Bridge captures the tranquil beauty of the Argenteuil bridge with vibrant brushstrokes and evocative colors...'
     },
     {
-        imageUrl: '../assets/gallery/jardinArtiste.jpg',
+        imageUrl: '../assets/gallery/jardinArtiste.webp',
         name: 'Jardin de l\'artiste',
         year: '✦1873',
         description: 'His signature style shines through, characterized by bold brushstrokes that breathe life into the lush garden scenery...'
     },
     {
-        imageUrl: '../assets/gallery/waterLillies.jpg',
+        imageUrl: '../assets/gallery/waterLillies.webp',
         name: 'Water Lillies',
         date: '✦1882',
         description: 'Monet offers a serene immersion into nature\'s beauty, where vibrant blooms dance upon the surface of the pond...'
@@ -31,7 +31,7 @@ const galleryItems = [
         description: 'In "Twilight Venice," Monet uses a warm, soft color palette to depict the calm and serene atmosphere of the city at dusk...'
     },
     {
-        imageUrl: '../assets/gallery/grenouillere.jpg',
+        imageUrl: '../assets/gallery/grenouillere.webp',
         name: 'La Grenouillère',
         date: '✦1869',
         description: 'Monet portrays a charming riverside popular setting, revealing his adeptness in capturing the play of light and color...'
