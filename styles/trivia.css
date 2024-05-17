@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 20rem;
-    margin-top: 4rem;
+    margin-top: 3.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,6 +80,7 @@ body {
     .header-trivia {
         width: 20rem;
         padding: 0.625em;
+        margin-top: 8em;
     }
 
     .btn {
