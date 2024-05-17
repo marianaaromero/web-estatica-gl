@@ -172,8 +172,8 @@ body {
 
 /*Body*/
 .light {
-    background-color: #c8e6bb;
-    color: #306144;
+    background-color: #8ccfb9;
+    color: #336352;
 }
 
 /*Botones, contenido de trivia, nav, footer, btn up y social icons*/
@@ -183,8 +183,9 @@ body {
 .light header,
 .light footer,
 .light #button-up,
-.light .social-icons a {
-    background-color: #7b9677;
+.light .social-icons a,
+.light .menu ul {
+    background-color: #62b196;
     color: #2f5840;
 }
 
@@ -194,9 +195,21 @@ body {
     color: #ffffff;
 }
 
+.light .cover div h1 span {
+    background-color: #528a76;
+}
+
+.light #logo {
+    color: #3a6b5b;
+}
+
+.light #logo b {
+    color: #fff;
+}
+
 /*Texto de subscribe*/
 .light #email::placeholder {
-    color: #8fb99c;
+    color: #648376;
 }
 
 /*Hover*/
@@ -206,13 +219,15 @@ body {
 .light .material-symbols-outlined:hover,
 .light #subscribe-form button:hover,
 .light .gallery-button button:hover,
+.light .menu ul li a:hover,
 .light .btn:hover:not([disabled]) {
-    background-color: #b5c99a;
-    color: #7b9677;
+    background-color: #dbf3eb;
+    color: #336352;
 }
 
 .light .title-section-content {
-    text-shadow: 5px -3px 1px #e1e6dec4;
+    color: #FFF9F3;
+    text-shadow: 7px -10px 1px #3f836b;
 }
 
 .light #intro-text {
