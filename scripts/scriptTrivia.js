@@ -2,7 +2,7 @@
 const questions = [
     {
         question: "Where was Claude Monet born?",
-        img: "../assets/monet.jpeg",
+        img: "../assets/monet.jpg",
         answers: [
             { text: "Paris, France", correct: true },
             { text: "Milan, Italy", correct: false },
