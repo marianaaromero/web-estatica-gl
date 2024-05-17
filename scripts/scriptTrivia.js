@@ -52,11 +52,11 @@ const questions = [
     },
     {
         question: "What is the name of this painting?",
-        img: "../assets/estanqueNinfeas.jpg",
+        img: "../assets/puente.jpg",
         answers: [
             { text: "Lily Garden", correct: false },
             { text: "Swan Lagoon", correct: false },
-            { text: "The Nymphaea Pond", correct: true },
+            { text: "The japanese bridge", correct: true },
             { text: "The Lotus Fountain", correct: false },
         ]
     },
@@ -78,6 +78,36 @@ const questions = [
             { text: "Fields", correct: false },
             { text: "Haystacks", correct: true },
             { text: "Huts", correct: false },
+        ]
+    },
+    {
+        question: "What culture inspired Monet to paint many of his paintings?",
+        img: "../assets/mujerJaponesa.jpg",
+        answers: [
+            { text: "Japanese", correct: true },
+            { text: "Italian", correct: false },
+            { text: "China", correct: false },
+            { text: "Portuguese", correct: false },
+        ]
+    },
+    {
+        question: "What inspired Monet to make this painting?",
+        img: "../assets/jardin.jpg",
+        answers: [
+            { text: "A park", correct: false},
+            { text: "A mountain", correct: false },
+            { text: "A forest", correct: false },
+            { text: "His Garden", correct: true },
+        ]
+    },
+    {
+        question: "In how many of your works do water lilies appear?",
+        img: "../assets/nenufares.jpg",
+        answers: [
+            { text: "180", correct: false},
+            { text: "75", correct: false },
+            { text: "250", correct: true },
+            { text: "120", correct: false },
         ]
     }
 ];
@@ -157,7 +187,7 @@ function handleAnswer(event) {
         showCorrectAnswer();
     }
     disableAnswerButtons();
-    setTimeout(showNextQuestion, 2000);
+    setTimeout(showNextQuestion, 1500);
 }
 
 //Mostrar respuesta Correcta
