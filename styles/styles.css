@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #649283;
+    background-color: #598375;
     color: #FFF9F3;
     transition: all 0.3s;
     font-family: "Artifika", serif;
@@ -93,7 +93,7 @@ body {
 .menu span:hover {
     background-color: #679275da;
     border-radius: 5px;
-    color: #20442f;
+    color: #233831;
 }
 
 .menu i,

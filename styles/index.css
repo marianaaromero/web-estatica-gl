@@ -27,7 +27,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #323b2d;
+    background-color: #2d3b33;
     opacity: 0.6;
     z-index: -1;
 }
@@ -63,7 +63,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #323b2d;
+    background-color: #233831;
     animation: text-reveal-box 1s ease;
     animation-delay: 1s;
     overflow: hidden;
@@ -336,7 +336,7 @@
 #subscribe-form button {
     padding: 1rem 1rem;
     font-size: 1.1rem;
-    background-color: #4a6954;
+    background-color: #406b5d;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -353,7 +353,7 @@
 #button-up {
     width: 55px;
     height: 55px;
-    background: #3a5241;
+    background: #2f584a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +370,7 @@
 
 #button-up:hover {
     transform: scale(1.1);
-    border-color: #2c3f32;
+    border-color: #2338319c;
 }
 
 #button-up span {
