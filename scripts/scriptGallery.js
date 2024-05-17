@@ -63,7 +63,6 @@ function createGalleryItems() {
 
 
 //Botones
-
 function slideForward() {
     const firstItem = slide.firstElementChild;
     slide.appendChild(firstItem);
@@ -76,6 +75,8 @@ function slideBackward() {
     highlightActiveButton(prevButton);
 }
 
+
+//Manejo con botones 
 nextButton.addEventListener('click', () => {
     slideForward();
 });
@@ -84,6 +85,8 @@ prevButton.addEventListener('click', () => {
     slideBackward();
 });
 
+
+//Manjeo con teclado
 document.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowRight') {
         slideForward();
@@ -94,19 +97,21 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-slide.addEventListener('touchstart', function(event) {
+slide.addEventListener('touchstart', function (event) {
     startX = event.touches[0].clientX;
 });
 
-slide.addEventListener('touchmove', function(event) {
+slide.addEventListener('touchmove', function (event) {
     endX = event.touches[0].clientX;
 });
 
-slide.addEventListener('touchend', function() {
+slide.addEventListener('touchend', function () {
     if (startX > endX) {
         slideForward();
     } else if (startX < endX) {
         slideBackward();
     }
 });
+
+
 createGalleryItems();

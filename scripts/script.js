@@ -20,7 +20,7 @@ brush.addEventListener("click", function () {
         applyLightTheme();
         state = false;
     }
-    
+
     // Local Storage
     localStorage.setItem("theme", state ? "dark" : "light");
 });
@@ -33,6 +33,9 @@ function applyLightTheme() {
     body.classList.add("light");
 }
 
+
+
+
 // RESPONSIVE MENU - NAV BAR
 
 const menuButton = document.querySelector(".menu .mobile-nav");
@@ -40,6 +43,9 @@ const menuButton = document.querySelector(".menu .mobile-nav");
 menuButton.addEventListener("click", function () {
     document.querySelector(".menu ul").classList.toggle("show");
 });
+
+
+
 
 // MUSIC BUTTON
 function toggleAudio() {
@@ -53,17 +59,20 @@ function toggleAudio() {
     }
 }
 
+
+
+//SUBSCRIBE
 // email for subscribing - local storage
-document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+document.getElementById('subscribe-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
-    
+
     const storedEmail = localStorage.getItem('email');
 
     if (storedEmail === email) {
         alert('You are already subscribed with this email!');
-        return; 
+        return;
     }
     localStorage.setItem('email', email);
 
@@ -72,29 +81,32 @@ document.getElementById('subscribe-form').addEventListener('submit', function(ev
     alert('Thank you for subscribing!');
 });
 
-// up button
 
+
+//UP BUTTON
 document.getElementById("button-up").addEventListener("click", scrollUp);
 
-function scrollUp(){
+function scrollUp() {
 
     const currentScroll = document.documentElement.scrollTop;
 
-    if (currentScroll > 0){
+    if (currentScroll > 0) {
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 10));
+        window.scrollTo(0, currentScroll - (currentScroll / 10));
     }
 }
 
 buttonUp = document.getElementById("button-up");
 
-window.onscroll = function(){
+
+//SCROLL
+window.onscroll = function () {
 
     const scroll = document.documentElement.scrollTop;
 
-    if (scroll > 600){
+    if (scroll > 600) {
         buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 600){
+    } else if (scroll < 600) {
         buttonUp.style.transform = "scale(0)";
     }
 

@@ -94,7 +94,7 @@ const questions = [
         question: "What inspired Monet to make this painting?",
         img: "../assets/jardin.jpg",
         answers: [
-            { text: "A park", correct: false},
+            { text: "A park", correct: false },
             { text: "A mountain", correct: false },
             { text: "A forest", correct: false },
             { text: "His Garden", correct: true },
@@ -104,13 +104,15 @@ const questions = [
         question: "In how many of your works do water lilies appear?",
         img: "../assets/nenufares.jpg",
         answers: [
-            { text: "180", correct: false},
+            { text: "180", correct: false },
             { text: "75", correct: false },
             { text: "250", correct: true },
             { text: "120", correct: false },
         ]
     }
 ];
+
+
 
 let currentQuestionIndex = 0;
 let score = 0;
