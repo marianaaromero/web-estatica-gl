@@ -22,7 +22,7 @@ const questions = [
     },
     {
         question: "How many paintings does the Rouen Cathedral series consist of?",
-        img: "../assets/catedralRouen.jpg",
+        img: "../assets/catedralRouen.webp",
         answers: [
             { text: "8", correct: false },
             { text: "15", correct: false },
@@ -32,7 +32,7 @@ const questions = [
     },
     {
         question: "In which city did Monet live and paint for many years?",
-        img: "../assets/house.jpg",
+        img: "../assets/house.webp",
         answers: [
             { text: "Giverny, France", correct: true },
             { text: "Milan, Italy", correct: false },

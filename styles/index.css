@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/1-cover-Nymphéas-Seerosen-1915.jpeg);
+    background-image: url(../assets/1-cover.webp);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -85,7 +85,7 @@
     box-sizing: border-box;
     font-size: 2rem;
     padding-block: 2rem;
-    text-shadow: 5px -3px 1px #5b6e51c4;
+    text-shadow: 5px -3px 1px #233831;
     margin: 0 5%;
 }
 

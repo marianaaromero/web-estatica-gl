@@ -142,7 +142,7 @@ body {
         position: fixed;
         width: 100%;
         max-width: 8rem;
-        background: #4a6954ad;
+        background: #406b5dc4;
         top: 4rem;
         right: 0;
         display: none;
@@ -153,6 +153,10 @@ body {
 
     .menu ul li {
         text-align: center;
+    }
+
+    .menu ul li:hover {
+        background-color: #679275;
     }
 
     .menu ul li a {
