@@ -94,4 +94,19 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+slide.addEventListener('touchstart', function(event) {
+    startX = event.touches[0].clientX;
+});
+
+slide.addEventListener('touchmove', function(event) {
+    endX = event.touches[0].clientX;
+});
+
+slide.addEventListener('touchend', function() {
+    if (startX > endX) {
+        slideForward();
+    } else if (startX < endX) {
+        slideBackward();
+    }
+});
 createGalleryItems();
