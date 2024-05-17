@@ -191,9 +191,13 @@ body {
 
 /*Texto de nav y material symbols*/
 .light .menu i,
-.light .menu .material-symbols-outlined {
+.light .menu .material-symbols-outlined,
+.experiences-content article {
     color: #ffffff;
+    background-color: #62b196;
 }
+
+
 
 .light .cover div h1 span {
     background-color: #528a76;
@@ -216,13 +220,16 @@ body {
 .light .gallery-button button:hover,
 .light .menu i:hover,
 .light .actions button:hover,
-.light .material-symbols-outlined:hover,
 .light #subscribe-form button:hover,
 .light .gallery-button button:hover,
 .light .menu ul li a:hover,
 .light .btn:hover:not([disabled]) {
     background-color: #dbf3eb;
     color: #336352;
+}
+
+.light .material-symbols-outlined:hover {
+    color: #dbf3eb;
 }
 
 .light .title-section-content {
