@@ -105,7 +105,7 @@
     font-size: 2rem;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
-    text-shadow: 10px -15px 1px #21362f;
+    text-shadow: 7px -10px 1px #1f302a;
     margin: 0 10%;
 }
 
@@ -263,28 +263,30 @@
 .experiences-content article {
     background-color: #395a4f;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 2rem;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .experiences-content article div {
     display: flex;
-    gap: 3rem;
-    justify-content: flex-end;
+    gap: 1rem;
+    text-align: initial;
 }
 
 .experiences-content article h3 {
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .experiences-content article p {
-    margin-top: 1.4rem;
+    margin-top: 0.5rem;
     line-height: 1.7rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .experiences article a {
@@ -295,7 +297,8 @@
 }
 
 .experiences article a span {
-    font-size: 8rem;
+    font-size: 7rem;
+    justify-content: center;
 }
 
 .experiences a:hover {
