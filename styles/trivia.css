@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 20rem;
-    margin-top: 10em;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
