@@ -186,11 +186,6 @@ body {
     color: #2f5840;
 }
 
-/*button trivia*/
-.light .btn {
-    border: 2px solid #7b9677;
-}
-
 /*Texto de nav y material symbols*/
 .light .menu i,
 .light .menu .material-symbols-outlined {
