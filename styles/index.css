@@ -39,14 +39,61 @@
 }
 
 .cover div h1 {
-    font-size: 3rem;
-    color: #FFF9F3;
-    text-align: center;
+    width: 100%;
+    position: relative;
+    color: transparent;
+    animation: text-reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
 }
 
-.cover div h2 {
-    margin-top: 1rem;
-    text-align: center;
+.cover div h1:nth-child(1) {
+    font-size: 2rem;
+    animation-delay: 1.5s;
+    width: fit-content;
+}
+
+.cover div h1:nth-child(2) {
+    font-size: 4rem;
+    animation-delay: 2.5s;
+}
+
+.cover div h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #233831;
+    animation: text-reveal-box 1s ease;
+    animation-delay: 1s;
+    overflow: hidden;
+}
+
+.cover h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+.cover h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+@keyframes text-reveal {
+    100% {
+        color: #FFF9F3;
+    }
+}
+
+@keyframes text-reveal-box {
+    50% {
+        left: 0;
+        width: 100%;
+
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+    }
 }
 
 /* titles */
@@ -56,17 +103,18 @@
     font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
     font-size: 2rem;
-    padding-block: 2rem;
-    text-shadow: 5px -3px 1px #233831;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    text-shadow: 10px -15px 1px #21362f;
     margin: 0 5%;
 }
 
 
 /* intro */
 #intro-text {
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: #406b5d;
-    padding: 2rem 5rem;
+    padding: 2rem 6%;
 }
 
 #intro-text h3 {
@@ -86,7 +134,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    max-width: 90%;
     margin: 0 5%;
     background-color: #323b2d4f;
     padding: 2rem;
@@ -99,12 +146,12 @@
     height: auto;
     mask-image: linear-gradient(black 70%,
             transparent);
-    overflow: hidden;
 }
 
 #monet-description {
     line-height: 1.7rem;
-    padding-right: 8rem;
+    padding-right: 20%;
+    margin-bottom: 0.6rem;
 }
 
 #monet-description h3 {
@@ -114,7 +161,7 @@
 
 #monet-description h4 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 /* highlights */
@@ -124,7 +171,7 @@
     grid:
         "painting1 painting3" 1fr "painting2 painting3" 1fr / 1fr 1fr;
     gap: 20px;
-    width: 60%;
+    width: 90%;
     margin: auto;
 }
 
@@ -400,44 +447,38 @@
 }
 
 
-/* KEYFRAMES */
-
-/* home keyframes */
-/* @keyframes text-reveal-box {
-    50% {
-        left: 0;
-        width: 100%;
-    }
-
-    100% {
-        left: 100%;
-        width: 0;
-    }
-}
-
-@keyframes text-reveal {
-    100% {
-        color: #FFF9F3;
-    }
-} */
-
+/* media queries */
 
 @media only screen and (max-width: 780px) {
 
     .cover {
         width: 100%;
+        align-items: center;
     }
 
-    .cover h1 {
-        width: fit-content;
-        margin: 5%;
-        font-size: 0.5rem;
+    .cover div {
+        text-align: center;
+    }
+
+    .cover div h1:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .cover div h1:nth-child(2) {
+        font-size: 1.8rem;
     }
 
     #intro-text {
         padding: 2rem;
         text-align: justify;
-        font-size: 0.2rem;
+    }
+
+    #intro-text h3 {
+        font-size: 1.8rem;
+    }
+
+    #intro-text p {
+        font-size: 1.1rem;
     }
 
     .about-monet {
@@ -451,7 +492,11 @@
     }
 
     .artworks-gallery {
-        width: 90%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: auto;
     }
 
     .footer li i {
