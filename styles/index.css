@@ -106,7 +106,7 @@
     padding-top: 3rem;
     padding-bottom: 1.5rem;
     text-shadow: 10px -15px 1px #21362f;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 
@@ -114,7 +114,7 @@
 #intro-text {
     margin-top: 2rem;
     background-color: #406b5d;
-    padding: 2rem 6%;
+    padding: 2rem 10%;
 }
 
 #intro-text h3 {
@@ -134,7 +134,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 10%;
     background-color: #323b2d4f;
     padding: 2rem;
     border-radius: 20px;
@@ -171,7 +171,8 @@
     grid:
         "painting1 painting3" 1fr "painting2 painting3" 1fr / 1fr 1fr;
     gap: 20px;
-    width: 90%;
+    width: 80%;
+    height: 80vh;
     margin: auto;
 }
 
@@ -254,7 +255,7 @@
 /* experiences section */
 
 .experiences-content {
-    margin: 0 5%;
+    margin: 0 10%;
     display: flex;
     gap: 2rem;
 }
@@ -497,6 +498,7 @@
         flex-direction: column;
         gap: 10px;
         margin: auto;
+        height: 100vh;
     }
 
     .footer li i {
