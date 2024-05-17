@@ -38,43 +38,15 @@
     justify-content: flex-start;
 }
 
-.cover h1 {
-    width: 100%;
-    position: relative;
-    color: transparent;
-    animation: text-reveal 0.5s ease forwards;
-    animation-delay: 1.5s;
+.cover div h1 {
+    font-size: 3rem;
+    color: #FFF9F3;
+    text-align: center;
 }
 
-.cover h1:nth-child(1) {
-    font-size: 2rem;
-    animation-delay: 1.5s;
-    width: fit-content;
-}
-
-.cover h1:nth-child(2) {
-    font-size: 4rem;
-    animation-delay: 2.5s;
-}
-
-.cover h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #233831;
-    animation: text-reveal-box 1s ease;
-    animation-delay: 1s;
-    overflow: hidden;
-}
-
-.cover h1:nth-child(1) span {
-    animation-delay: 1s;
-}
-
-.cover h1:nth-child(2) span {
-    animation-delay: 2s;
+.cover div h2 {
+    margin-top: 1rem;
+    text-align: center;
 }
 
 /* titles */
@@ -219,8 +191,8 @@
 }
 
 .actions button {
-    background-color: #FFF;
-    color: #618269;
+    background-color: #ffffff;
+    color: #3a5242;
     border: none;
     padding: 0.313em 0.625em;
     border-radius: 5px;
@@ -228,7 +200,7 @@
 }
 
 .actions button:hover {
-    background-color: #6D8261;
+    background-color: #6a9979e5;
     color: #FFF;
 }
 
@@ -241,7 +213,7 @@
 }
 
 .experiences-content article {
-    background-color: #4a6954;
+    background-color: #395a4f;
     border-radius: 10px;
     padding: 1rem;
     width: 50%;
@@ -268,7 +240,7 @@
 }
 
 .experiences article a {
-    color: #ffffff;
+    color: #6a9979e5;
     text-decoration: none;
     margin-bottom: 3px;
     margin-top: auto;
@@ -279,7 +251,7 @@
 }
 
 .experiences a:hover {
-    color: #556B52;
+    color: #ffffffe5;
 }
 
 
@@ -305,7 +277,7 @@
 }
 
 .newsletter-section p b {
-    color: #30573f;
+    color: #2e4235;
 }
 
 #subscribe-form {
@@ -328,7 +300,7 @@
 }
 
 #email::placeholder {
-    color: #8fb99c;
+    color: #4a6954;
     font-weight: bold;
     font-size: 1rem;
 }
@@ -347,7 +319,7 @@
 }
 
 #subscribe-form button:hover {
-    background-color: #85bd97e5;
+    background-color: #6a9979e5;
 }
 
 #button-up {
@@ -380,7 +352,7 @@
 
 /* footer */
 .footer {
-    background-color: #406b5d;
+    background-color: #395a4f;
     padding: 20px 0;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -431,7 +403,7 @@
 /* KEYFRAMES */
 
 /* home keyframes */
-@keyframes text-reveal-box {
+/* @keyframes text-reveal-box {
     50% {
         left: 0;
         width: 100%;
@@ -447,7 +419,7 @@
     100% {
         color: #FFF9F3;
     }
-}
+} */
 
 
 @media only screen and (max-width: 780px) {

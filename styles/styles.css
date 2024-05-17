@@ -89,11 +89,12 @@ body {
     margin: 0 0;
 }
 
+.menu a:hover,
 .menu i:hover,
 .menu span:hover {
-    background-color: #679275da;
+    background-color: #6a9982;
     border-radius: 5px;
-    color: #233831;
+    color: #406b5d;
 }
 
 .menu i,
@@ -118,14 +119,12 @@ body {
 
 @media only screen and (max-width: 780px) {
     .header-content {
-        margin: 0 5%;
+        margin: 0 2%;
     }
 
-    .header {
-        width: 100%;
-        padding: 0.625em;
+    #logo {
+        margin-left: 3%;
     }
-
 
     /* menu for mobile devices */
 
@@ -135,7 +134,6 @@ body {
 
     .menu .mobile-nav {
         display: block;
-        align-items: left;
     }
 
     .menu ul {
