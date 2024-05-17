@@ -192,7 +192,7 @@ body {
 /*Texto de nav y material symbols*/
 .light .menu i,
 .light .menu .material-symbols-outlined,
-.experiences-content article {
+.light .experiences-content article {
     color: #ffffff;
     background-color: #62b196;
 }
